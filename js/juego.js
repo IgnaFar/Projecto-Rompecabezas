@@ -1,7 +1,14 @@
 // Arreglo que contiene las intrucciones del juego 
-var instrucciones = [];
+var instrucciones = ["Mover las piezas de a uno hasta que la imagen se vea como la que esta en la pestaña Objetivo.", "Si no recordas cual fue tu ultima movida solo hace falta ver la pestaña Ultimo movimiento."];
 // Arreglo para ir guardando los movimientos que se vayan realizando
-var movimientos = [];
+var movimientos = 
+
+function direccion(movimiento){
+  for(i = 0; i < movimiento; i++){
+    
+  }
+  actualizarUltimoMovimiento(direccion);
+}
 
 // Representación de la grilla. Cada número representa a una pieza.
 // El 9 es la posición vacía
@@ -21,7 +28,10 @@ Cada elemento de este arreglo deberá ser mostrado en la lista con id 'lista-ins
 Para eso deberás usar la función ya implementada mostrarInstruccionEnLista().
 Podés ver su implementación en la ultima parte de este codigo. */
 function mostrarInstrucciones(instrucciones) {
-    //COMPLETAR
+  for (i = 0; i < instrucciones[i].length; i++){
+
+  }
+  mostrarInstruccionEnLista(instruccion, idLista);
 }
 
 /* COMPLETAR: Crear función que agregue la última dirección al arreglo de movimientos
