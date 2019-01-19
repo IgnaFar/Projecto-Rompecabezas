@@ -4,10 +4,10 @@ var instrucciones = ["Mover las piezas de a uno hasta que la imagen se vea como 
 var movimientos = 
 
 function direccion(movimiento){
-  for(i = 0; i < movimiento; i++){
-    
+  for(var i = 0; i < movimiento.length; i++){
+    movimiento.push(direccion);
   }
-  actualizarUltimoMovimiento(direccion);
+  actualizarUltimoMovimiento(movimientos);
 }
 
 // Representación de la grilla. Cada número representa a una pieza.
@@ -28,10 +28,9 @@ Cada elemento de este arreglo deberá ser mostrado en la lista con id 'lista-ins
 Para eso deberás usar la función ya implementada mostrarInstruccionEnLista().
 Podés ver su implementación en la ultima parte de este codigo. */
 function mostrarInstrucciones(instrucciones) {
-  for (i = 0; i < instrucciones[i].length; i++){
-
+  for (var i = 0; i < instrucciones.length; i++){
+    mostrarInstruccionEnLista(instrucciones[i], "lista-instrucciones");
   }
-  mostrarInstruccionEnLista(instruccion, idLista);
 }
 
 /* COMPLETAR: Crear función que agregue la última dirección al arreglo de movimientos
